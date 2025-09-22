@@ -1,4 +1,3 @@
-# This is your final-sem-project-data-fundamentals
 # Supabase Project — Data Tools
 
 ## 📌 Overview
