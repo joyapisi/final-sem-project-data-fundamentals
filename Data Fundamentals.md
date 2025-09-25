@@ -8,8 +8,7 @@ The goal is to learn how to manage data access, enforce least privilege, and doc
 ---
 
 ## Project Scheme
-- **Supabase Postgres database** with at least 3 tables  
-- **5 rows per table** minimum  
+- **Supabase Postgres database** with at least 3 tables and 5 rows for each table  (You already created this in the Data Tools Final Project)
 - **Admin and Regular User roles**  
 - **Row Level Security (RLS)** enabled  
 - **Policies** for different role actions (read, insert, update, delete)  
@@ -19,15 +18,8 @@ The goal is to learn how to manage data access, enforce least privilege, and doc
 ---
 
 ## Week 1 – Database Setup
-1. Create a new Supabase project.  
-2. Design at least 3 related tables (5 rows each). Example:  
-   - `users` (basic info, role column: admin / user)  
-   - `projects` (created by users)  
-   - `tasks` (linked to projects)  
-3. Insert sample data into the tables.  
-4. Enable **Row Level Security** (RLS) for all tables.  
-
----
+1. Use the Supabase project from your Data Tools final Project.  
+2. Enable **Row Level Security** (RLS) for all tables.  
 
 ## Week 2 – Roles & Policies
 1. Define **Admin** and **User** roles.  
@@ -74,7 +66,7 @@ $$;
 ---
 
 ## Deliverables
-- Supabase project with 3 tables (5+ rows each)  
+- Supabase project with 3 tables (5+ rows each)  [Done in Data Tools Project]
 - Admin and User roles implemented  
 - Row Level Security (RLS) and policies applied  
 - At least one custom admin-only function  
