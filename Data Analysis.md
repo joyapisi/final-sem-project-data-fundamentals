@@ -10,24 +10,18 @@ Each student will create their own dataset, document it, and analyze it with R.
 The structure is the same for everyone, but the **topic/idea is unique** to each student.  
 
 ---
-
-## Project Scheme
+## Use the same Database from your Data Tools final project. It had:
 - **3 tables** in the database (in Supabase/Postgres)  
 - **5 rows per table** minimum  
 - **Clear relationships** (at least one `FOREIGN KEY`)  
-- **Documentation** in `README.md` and a **data dictionary**  
-- **Upload to GitHub** and submit a **Pull Request** to lecturer’s repo  
+- **Documentation** in `README.md` and a **data dictionary**   
 
 ---
 
 ## Week-by-Week Breakdown
 
 ### Week 1 – Database Setup
-1. Create a new **Supabase project** (Postgres database).  
-2. Design **3 related tables** (5+ rows each).  
-   - Example idea: *Books*, *Authors*, *Publishers*.  
-3. Insert sample data manually or via SQL scripts.  
-4. Connect RStudio Cloud to the database using `RPostgres`.
+1. Use the same database you had from your data tools final project 
 
 **Sample R connection code:**
 ```r
@@ -44,17 +38,7 @@ con <- dbConnect(
 
 dbListTables(con)
 ```
-### Week 2 – Documentation
-1. Write a README.md that explains:
-- Your project idea
-- Why you chose it
-- The database schema (ERD optional)
-2. Create a data dictionary (data_dictionary.md) with:
-- Table name
-- Column name, type, description, example values
-Keep documentation simple and consistent.
-
-### Week 3 – Data Analysis in R
+### Week 2 – Data Analysis in R
 Query the database from RStudio Cloud.
 ```r
 df <- dbGetQuery(con, "SELECT * FROM books;")
@@ -76,7 +60,7 @@ ggplot(df, aes(x=genre, fill=genre)) +
   geom_bar() +
   theme_minimal()
 ```
-### Week 4 – GitHub Submission
+### Week 3 – GitHub Submission
 1. Push your work from RStudio Cloud to GitHub:
 - README.md
 - data_dictionary.md
@@ -86,15 +70,7 @@ ggplot(df, aes(x=genre, fill=genre)) +
 
 ### Deliverables
 
-1. Supabase database with 3 tables, 5+ rows each
-
-2. README.md (project overview)
-3. Data dictionary file
-4. R code (analysis.R) with ggplot visuals
-5. GitHub pull request link
+1. A README.md (project overview)
+2. R code (analysis.R) with ggplot visuals
+3. GitHub pull request link
    
-### Example Project Ideas
-- Movie reviews database + analysis of ratings
-- Small shop (products, customers, orders) + sales analysis
-- Sports teams, players, matches + performance visualization
-- Recipes, ingredients, chefs + cost analysis
