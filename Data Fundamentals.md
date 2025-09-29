@@ -70,4 +70,4 @@ $$;
 - Admin and User roles implemented  
 - Row Level Security (RLS) and policies applied  
 - At least one custom admin-only function  
-- Documentation in GitHub (`README.md`, 
+- Documentation in GitHub (`README.md`)
