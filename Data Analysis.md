@@ -21,7 +21,8 @@ The structure is the same for everyone, but the **topic/idea is unique** to each
 ## Week-by-Week Breakdown
 
 ### Week 1 – Database Setup
-1. Use the same database you had from your data tools final project 
+1. Use the same database you had from your data tools final project
+2. Connect your Database in Supabase to R
 
 **Sample R connection code:**
 ```r
