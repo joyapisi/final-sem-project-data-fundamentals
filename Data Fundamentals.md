@@ -58,8 +58,7 @@ $$;
 ```
 ## Week 4 – GitHub Submission
 1. Push your work to GitHub with:  
-   - `README.md` (project description, roles, policies explained)  
-   - `schema.sql` (table creation & policies)  
+   - `README.md` (project description, roles, policies explained)    
    - `security_notes.md` (short notes on your security setup)  
 2. Submit a **Pull Request** to the lecturer’s repository.  
 
