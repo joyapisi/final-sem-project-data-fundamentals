@@ -38,7 +38,7 @@ con <- dbConnect(
 
 dbListTables(con)
 ```
-### Week 2 – Data Analysis in R
+### [Optional] Week 2 – Data Analysis in R
 1. You will use Posit Cloud for R online <a>https://posit.cloud/</a>
 2. Start a new project and install these packages(First time only- Installed only once):
 ```R
