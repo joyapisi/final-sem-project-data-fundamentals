@@ -2,7 +2,7 @@
 
 ## Overview
 This is a **4-week project** where each student works independently but follows a **standardized project scheme**.  
-- Environment: **RStudio Cloud**  
+- Environment: **RStudio Cloud** <a>https://posit.cloud/</a> 
 - Database: **Postgres (via Supabase)**  
 - Visualization: **ggplot2**  
 
@@ -52,7 +52,7 @@ install.packages("ggplot2")
 df <- dbGetQuery(con, "SELECT * FROM books;")
 head(df)
 ```
-4. Perform basic analysis: summaries, filtering, grouping.
+4. [Optional] Perform basic analysis: summaries, filtering, grouping.
 
 ```r
 library(dplyr)
@@ -77,6 +77,7 @@ ggplot(df, aes(x=genre, fill=genre)) +
 - Include your Supabase connection setup and query samples.
 
 ### Deliverables
+A pull request link of a branch(not Main branch) having the documentation of your entire work.
 
 1. A README.md (project overview)
 2. R code (analysis.R) with ggplot visuals
