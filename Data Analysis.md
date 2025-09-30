@@ -60,7 +60,7 @@ df %>%
   group_by(author_id) %>%
   summarise(avg_pages = mean(pages))
 ```
-5. Use ggplot2 to visualize at least 2 insights.
+5. Use ggplot2 to visualize at least 1 insight.
 
 ```r
 library(ggplot2)
