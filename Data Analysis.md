@@ -25,26 +25,33 @@ The structure is the same for everyone, but the **topic/idea is unique** to each
 
 **Sample R connection code:**
 ```r
-library(DBI)
 con <- dbConnect(
   RPostgres::Postgres(),
-  host = "your-supabase-host.supabase.co",
+  host = "abc123.supabase.co",   # from Supabase Project Settings > Database
   port = 5432,
-  dbname = "postgres",
-  user = "your-username",
-  password = "your-password",
+  dbname = "postgres",           # usually stays postgres
+  user = "postgres",             # Supabase gives you this
+  password = "your-real-password", 
   sslmode = "require"
 )
 
 dbListTables(con)
 ```
 ### Week 2 – Data Analysis in R
-Query the database from RStudio Cloud.
+1. You will use Posit Cloud for R online <a>https://posit.cloud/</a>
+2. Start a new project and install these packages(First time only- Installed only once):
+```R
+install.packages("DBI")
+install.packages("RPostgres")
+install.packages("dplyr")
+install.packages("ggplot2")
+```
+3. Query the database from RStudio Cloud.
 ```r
 df <- dbGetQuery(con, "SELECT * FROM books;")
 head(df)
 ```
-Perform basic analysis: summaries, filtering, grouping.
+4. Perform basic analysis: summaries, filtering, grouping.
 
 ```r
 library(dplyr)
@@ -52,7 +59,7 @@ df %>%
   group_by(author_id) %>%
   summarise(avg_pages = mean(pages))
 ```
-Use ggplot2 to visualize at least 2 insights.
+5. Use ggplot2 to visualize at least 2 insights.
 
 ```r
 library(ggplot2)
